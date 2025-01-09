@@ -14,9 +14,9 @@ bool Auras::reload()
 bool Auras::loadFromXml()
 {
 	pugi::xml_document doc;
-	pugi::xml_parse_result result = doc.load_file("data/XML/auras.xml");
+	pugi::xml_parse_result result = doc.load_file("data/XML/auras.xml");    
 	if (!result) {
-		printXMLError("Error - Auras::loadFromXml", "data/XML/auras.xml", result); 
+	        	printXMLError("Error - Auras::loadFromXml", "data/XML/auras.xml", result); 
 		return false;
 	}
 
